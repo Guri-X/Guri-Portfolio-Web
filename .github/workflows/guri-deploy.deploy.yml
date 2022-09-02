@@ -28,7 +28,7 @@ jobs:
       - name: Add .nojekyll file
         run: touch ./out/.nojekyll
       - name: Deploy
-        uses: Guri-X/Guri-Portfolio-Web@v4
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
           branch: guri-deploy
           folder: out
