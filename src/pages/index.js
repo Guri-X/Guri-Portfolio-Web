@@ -20,7 +20,7 @@ const Homepage1 = ({ posts }) => {
   return (
     <Layout>
       <Head>
-        <title>Gurvinder's Portfolio Website</title>
+        <title>Gurvinder&apos;s Portfolio Website</title>
       </Head>
 
       {/* Start Hero Section */}
