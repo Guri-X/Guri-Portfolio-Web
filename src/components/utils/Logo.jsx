@@ -12,8 +12,8 @@ const Logo = ({ url = "/", text = false }) => {
           <>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              className="h-8 max-h-full w-auto"
-              src="/images/logo.png"
+              className="h-12 max-h-full w-auto"
+              src="/images/logo_transparent.png"
               alt="Bieber"
             />
           </>
