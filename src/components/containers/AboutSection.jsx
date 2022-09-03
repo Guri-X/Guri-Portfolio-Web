@@ -103,14 +103,14 @@ const AboutSection = () => {
                 : {data.languages.join(", ")}
               </li>
             ) : null}
-            {/* {data.address && (
+            {data.address && (
               <li className="text-lg">
                 <strong className="inline-block min-w-[120px] font-medium">
-                  Address{" "}
+                  Location{" "}
                 </strong>
                 : {data.address}
               </li>
-            )} */}
+            )}
             {data.freelance && (
               <li className="text-lg">
                 <strong className="inline-block min-w-[120px] font-medium">
