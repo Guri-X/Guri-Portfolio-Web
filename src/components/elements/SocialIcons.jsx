@@ -1,10 +1,12 @@
 import {
-    RiDribbbleFill,
     RiFacebookFill,
     RiGithubFill,
     RiLinkedinBoxFill,
     RiTwitterFill,
+    RiDiscordFill,
+    RiTelegramFill
 } from "react-icons/ri";
+import { BsFillShieldLockFill } from "react-icons/bs";
 
 const SocialIcons = ({ data, rounded }) => {
     if (!data) return null;
@@ -87,10 +89,10 @@ const SocialIcons = ({ data, rounded }) => {
                     </a>
                 </li>
             )}
-            {data.dribbble && (
+            {data.infosec_blog && (
                 <li className="inline-block align-middle">
                     <a
-                        href={data.dribbble}
+                        href={data.infosec_blog}
                         target="_blank"
                         rel="noopener noreferrer"
                         className={`group relative inline-block h-10 w-10 overflow-hidden border border-white border-opacity-10 text-center align-middle text-lg leading-none text-body ${
@@ -98,10 +100,48 @@ const SocialIcons = ({ data, rounded }) => {
                         }`}
                     >
                         <span className="front relative left-0 top-0 flex h-full w-full translate-y-0 transform items-center justify-center rounded bg-grey transition-all duration-500 group-hover:-translate-y-full">
-                            <RiDribbbleFill className="inline-block" />
+                            <RiDiscordFill className="inline-block" />
                         </span>
                         <span className="back absolute left-0 top-0 flex h-full w-full translate-y-full items-center justify-center rounded bg-primary text-grey transition-all duration-500 group-hover:translate-y-0">
-                            <RiDribbbleFill className="inline-block" />
+                            <RiDiscordFill className="inline-block" />
+                        </span>
+                    </a>
+                </li>
+            )}
+            {data.telegram && (
+                <li className="inline-block align-middle">
+                    <a
+                        href={data.telegram}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`group relative inline-block h-10 w-10 overflow-hidden border border-white border-opacity-10 text-center align-middle text-lg leading-none text-body ${
+                            rounded ? "rounded-full" : "rounded"
+                        }`}
+                    >
+                        <span className="front relative left-0 top-0 flex h-full w-full translate-y-0 transform items-center justify-center rounded bg-grey transition-all duration-500 group-hover:-translate-y-full">
+                            <RiTelegramFill className="inline-block" />
+                        </span>
+                        <span className="back absolute left-0 top-0 flex h-full w-full translate-y-full items-center justify-center rounded bg-primary text-grey transition-all duration-500 group-hover:translate-y-0">
+                            <RiTelegramFill className="inline-block" />
+                        </span>
+                    </a>
+                </li>
+            )}
+            {data.infosec_blog && (
+                <li className="inline-block align-middle">
+                    <a
+                        href={data.infosec_blog}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`group relative inline-block h-10 w-10 overflow-hidden border border-white border-opacity-10 text-center align-middle text-lg leading-none text-body ${
+                            rounded ? "rounded-full" : "rounded"
+                        }`}
+                    >
+                        <span className="front relative left-0 top-0 flex h-full w-full translate-y-0 transform items-center justify-center rounded bg-grey transition-all duration-500 group-hover:-translate-y-full">
+                            <BsFillShieldLockFill className="inline-block" />
+                        </span>
+                        <span className="back absolute left-0 top-0 flex h-full w-full translate-y-full items-center justify-center rounded bg-primary text-grey transition-all duration-500 group-hover:translate-y-0">
+                            <BsFillShieldLockFill className="inline-block" />
                         </span>
                     </a>
                 </li>
