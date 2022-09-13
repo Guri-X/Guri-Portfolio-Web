@@ -8,9 +8,9 @@
     "age": 24,
     "nationality": "Indian",
     "languages": [
+        "English",
         "Hindi",
-        "Punjabi",
-        "English"
+        "Punjabi"
     ],
     "address": "Delhi, India",
     "freelance": "Available",
