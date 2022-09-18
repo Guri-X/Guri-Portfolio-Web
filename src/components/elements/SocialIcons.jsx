@@ -89,10 +89,10 @@ const SocialIcons = ({ data, rounded }) => {
                     </a>
                 </li>
             )}
-            {data.infosec_blog && (
+            {data.discord && (
                 <li className="inline-block align-middle">
                     <a
-                        href={data.infosec_blog}
+                        href={data.discord}
                         target="_blank"
                         rel="noopener noreferrer"
                         className={`group relative inline-block h-10 w-10 overflow-hidden border border-white border-opacity-10 text-center align-middle text-lg leading-none text-body ${
