@@ -7,6 +7,7 @@ import {
     RiTelegramFill
 } from "react-icons/ri";
 import { BsFillShieldLockFill } from "react-icons/bs";
+import { FaSearchLocation } from "react-icons/fa";
 
 const SocialIcons = ({ data, rounded }) => {
     if (!data) return null;
@@ -142,6 +143,25 @@ const SocialIcons = ({ data, rounded }) => {
                         </span>
                         <span className="back absolute left-0 top-0 flex h-full w-full translate-y-full items-center justify-center rounded bg-primary text-grey transition-all duration-500 group-hover:translate-y-0">
                             <BsFillShieldLockFill className="inline-block" />
+                        </span>
+                    </a>
+                </li>
+            )}
+            {data.osint_blog && (
+                <li className="inline-block align-middle">
+                    <a
+                        href={data.osint_blog}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`group relative inline-block h-10 w-10 overflow-hidden border border-white border-opacity-10 text-center align-middle text-lg leading-none text-body ${
+                            rounded ? "rounded-full" : "rounded"
+                        }`}
+                    >
+                        <span className="front relative left-0 top-0 flex h-full w-full translate-y-0 transform items-center justify-center rounded bg-grey transition-all duration-500 group-hover:-translate-y-full">
+                            <FaSearchLocation className="inline-block" />
+                        </span>
+                        <span className="back absolute left-0 top-0 flex h-full w-full translate-y-full items-center justify-center rounded bg-primary text-grey transition-all duration-500 group-hover:translate-y-0">
+                            <FaSearchLocation className="inline-block" />
                         </span>
                     </a>
                 </li>
