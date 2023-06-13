@@ -690,3 +690,33 @@
 .fullmenuitem {
   writing-mode: vertical-rl;
 }
+
+@media only screen 
+and (max-device-width : 992px) {
+    
+	.gx-about-section {
+		padding-left: 4rem !important;
+		padding-right: 4rem !important;
+	}
+
+}
+
+@media only screen 
+and (max-device-width : 768px) {
+    
+	.gx-about-section {
+		padding-left: 3rem !important;
+		padding-right: 3rem !important;
+	}
+
+}
+
+@media only screen 
+and (max-device-width : 576px) {
+    
+	.gx-about-section {
+		padding-left: initial !important;
+		padding-right: initial !important;
+	}
+
+}
