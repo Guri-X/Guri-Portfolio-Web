@@ -47,7 +47,7 @@ function MyApp({ Component, pageProps }) {
 
 				{/* <!-- Google tag (gtag.js) --> */}
 				<Script src="https://www.googletagmanager.com/gtag/js?id=G-SMSCM7HYDP" />
-				<Script>
+				<Script id="gg-analytics">
 					{`
 						window.dataLayer = window.dataLayer || [];
 						function gtag() {
