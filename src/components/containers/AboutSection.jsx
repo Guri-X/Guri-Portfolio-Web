@@ -60,28 +60,12 @@ const AboutSection = () => {
 									Hi, I am <span className="text-primary">{data.fullName}</span>
 								</h3><br />
 								<ul className="styledlist">
-									{data.firstName && (
-										<li className="text-lg">
-											<strong className="inline-block min-w-[120px] font-medium">
-												First Name{" "}
-											</strong>
-											: {data.firstName}
-										</li>
-									)}
-									{data.lastName && (
-										<li className="text-lg">
-											<strong className="inline-block min-w-[120px] font-medium">
-												Last Name{" "}
-											</strong>
-											: {data.lastName}
-										</li>
-									)}
 									{data.age && (
 										<li className="text-lg">
 											<strong className="inline-block min-w-[120px] font-medium">
 												Age{" "}
 											</strong>
-											: {data.age} years
+											: <span className="ml-5">{data.age} years</span>
 										</li>
 									)}
 									{data.nationality && (
@@ -89,23 +73,15 @@ const AboutSection = () => {
 											<strong className="inline-block min-w-[120px] font-medium">
 												Nationality{" "}
 											</strong>
-											: {data.nationality}
+											: <span className="ml-5">{data.nationality}</span>
 										</li>
 									)}
-									{data.languages.length ? (
-										<li className="text-lg">
-											<strong className="inline-block min-w-[120px] font-medium">
-												Languages{" "}
-											</strong>
-											: {data.languages.join(", ")}
-										</li>
-									) : null}
 									{data.address && (
 										<li className="text-lg">
 											<strong className="inline-block min-w-[120px] font-medium">
 												Location{" "}
 											</strong>
-											: {data.address}
+											: <span className="ml-5">{data.address}</span>
 										</li>
 									)}
 									{data.freelance && (
@@ -113,7 +89,15 @@ const AboutSection = () => {
 											<strong className="inline-block min-w-[120px] font-medium">
 												Freelance{" "}
 											</strong>
-											: {data.freelance}
+											: <span className="ml-5">{data.freelance}</span>
+										</li>
+									)}
+									{data.experience && (
+										<li className="text-lg">
+											<strong className="inline-block min-w-[120px] font-medium">
+												Experience{" "}
+											</strong>
+											: <span className="ml-5">{data.experience}+ years</span>
 										</li>
 									)}
 								</ul><br />
